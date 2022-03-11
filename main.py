@@ -47,13 +47,13 @@ def SEoR(x_data, y_data):
 
     dF_coef = 1 / (len(x_data) - 2)
 
-    print(dF_coef, y_residuals_squared, x_residuals_squared)
+    # print(dF_coef, y_residuals_squared, x_residuals_squared)
 
     return sqrt(dF_coef * (y_residuals_squared / x_residuals_squared))
 
 
 def main():
-    print("Tips: Have data set pre-typed and to be pasted. No need to include spaces in comma separation.")
+    print("Tips: Have data set pre-typed and pasted.\nNo need to include spaces.\nDon't move up/down (NumWorks)")
 
     x_data = [float(x) for x in input('Enter x data values, comma seperated:\n').replace(
         ' ', '').split(',')]
@@ -61,7 +61,7 @@ def main():
     y_data = [float(y) for y in input('Enter y data values, comma seperated:\n').replace(
         ' ', '').split(',')]
 
-    print(SEoR(x_data, y_data))
+    print("SEoR: ", SEoR(x_data, y_data))
 
 
 if __name__ == '__main__':
