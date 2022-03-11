@@ -2,6 +2,8 @@
 
 Script intended for NumWorks Calculator to calculate the Standard Error of Regression, which isn't a feature available on NumWorks. This standard error value can then be used to determine the t-statistic in linear regression analysis. Learn more about it [here](https://stattrek.com/regression/slope-test.aspx).
 
+To load this onto a NumWorks calculator, find the script [here](https://my.numworks.com/python/ethanolchennault/seor)
+
 # Functions
 
 `main() -> None`: Execute program asking for user input and outputting SEoR. This only needs to be called if this script is imported. If run as main, then `main` will automatically be called.
